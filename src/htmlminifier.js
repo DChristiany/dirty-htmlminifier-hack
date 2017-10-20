@@ -289,7 +289,7 @@ function cleanAttributeValue(tag, attrName, attrValue, options, attrs) {
       }
       attrValue = unwrapInlineCSS(options.minifyCSS(wrapInlineCSS(attrValue)));
     }
-    return attrValue;
+    return attrValue+";";
   }
   else if (isSrcset(attrName, tag)) {
     // https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-srcset
